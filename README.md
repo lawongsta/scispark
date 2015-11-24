@@ -8,8 +8,8 @@ REQUIREMENTS:
 
 INSTALL:
 * bower install
-  * NOTE: run this command by opening a Terminal window, and running the command within your 'dia-website' directory
-  * NOTE: this command will download requirements like Bootstrap and JQuery to your 'dia-website' installation
+  * NOTE: run this command by opening a Terminal window, and running the command within your 'scispark' directory
+  * NOTE: this command will download requirements like Bootstrap and JQuery to your 'scispark' installation
 
 RUN:
 * Open index.html in a browser
