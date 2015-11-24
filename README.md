@@ -1,6 +1,6 @@
 DESCRIPTION:
 
-Offical group website for JPL's 398M group.
+Offical group website for SciSpark site
 
 REQUIREMENTS:
 * Bower http://bower.io/
