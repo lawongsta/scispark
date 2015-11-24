@@ -1,0 +1,206 @@
+/*Project:	Scispark Website
+Version:	1
+Last change:	11/15/2015
+Assigned to:	Lauren Wong
+Primary use:	Information*/
+
+/*Styling Global Pages*/
+
+  html {
+    background-color: #F3F5F8;
+  }
+
+  body {
+    padding-top: 50px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    background-color: #F3F5F8;
+  }
+
+  h3{ 
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    padding: 2%;
+  }
+
+   .container{
+      padding: 40px;
+    }
+
+    .navbar {
+      min-height: 80px;
+      border-bottom: none;
+      background-color: #F3F5F8;
+    }
+
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+      color: #000;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: #3268cc;
+    }
+
+    img.logo {
+    height: 50px;
+    }
+
+    h1 {
+    display: inline;
+    position: relative;
+    font: 150px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgba(0,0,255,0.5); 
+  }
+
+
+/*Styling Home Page*/
+
+  div.jumbotron{
+    background-image: url("images/lightning3.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+
+  h3.hero{
+    font-size: 100px;
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering:optimizeLegibility;
+    color:#E7E5E4;
+    padding-top: 4%;
+    padding-bottom: 0%;
+    position: relative;
+  }
+
+  p.subtitle {
+    color: white;
+    text-align: left;
+    text-shadow: none;
+    font-size: 24px;
+    padding: 10px;
+    padding-bottom: 4%;
+  }
+
+/*Styling About Page*/
+
+/*Styling The Team Page*/
+  .row{
+    margin:70px;
+  }
+  
+  .caption{
+    text-align: center;
+  }
+
+  h2{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  h4{
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .circular {
+    width: 175px;
+    height: 175px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(http://link-to-your/image.jpg) no-repeat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    }
+
+/*Styling Contact Page*/
+  form{
+    margin: 0px auto;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  form div label p{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+  }
+
+  form > div{
+    padding: 10px 20px;
+  }
+
+  form> div label{
+    width: 300px;
+    display: inline-block;
+    border: none;
+  }
+
+  form div input.name{
+    border: none;
+    border-bottom: 1px solid #645B43;
+    width: 100%;
+    background-color:  #E7E5E4;
+  }
+
+  form div input.name:hover{
+    background-color: #FC2C2B;
+    opacity: .3;
+  }
+
+  form div input.email{
+    border: none;
+    border-bottom: 1px solid #645B43;
+    width: 90%;
+    background-color:  #E7E5E4;
+  }
+
+  form div input.email:hover{
+    background-color: #FC2C2B;
+    opacity: .3;
+  }
+
+  form div input.company{
+    border: none;
+    border-bottom: 1px solid #645B43;
+    width: 70%;
+    background-color:  #E7E5E4;
+  }
+
+  form div input.company:hover{
+    background-color: #FC2C2B;
+    opacity: .3;
+  }
+
+  form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #645B43;
+    width: 60%;
+    background-color:  #E7E5E4;
+  }
+
+  form textarea:hover{
+    background-color: #FC2C2B;
+    opacity: .3;
+  }
+
+/*Styling Footer*/
+
+  footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-color: #F3F5F8;
+    text-align: center;
+  }
+

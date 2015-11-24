@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SciSpark Website</title>
+
+    <!-- Google Fonts -->
+  
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+           <li><a href="index.html">SCISPARK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+             <li><a href="technology.html">TECHNOLOGY</a></li>
+            <li><a href="theteam.html">TEAM</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="navbar-right">
+          <img class="logo" src="images/logo_nasa_trio_black.png"</img>
+        </div>
+      </div>
+    </nav>
+
+ 
+    <div class="container">
+   <h3>Contact</h3>
+
+    <form method="post" action="" id="ContactForm">
+
+      <div>
+        <label for="name"> <h2>NAME</h2><p> [First, Last]</p></label> <br>
+        <input class="name" type="text" name="name" id="name" rows="2" required>
+      </div>
+
+      <div>
+        <label for="email"> <h2>E-MAIL</h2></label><br>
+        <input class="email" type="email" name="email" id="email" rows="2">
+      </div>
+
+      <div>
+        <label for="company"> <h2>COMPANY</h2></label><br>
+        <input class="company" type="company" name="company" id="company" rows="2">
+      </div>
+
+      <div>
+        <label for="messages"> <h2>MESSAGE</h2> <p> Give us a shout.</p></label><br>
+        <textarea name="messages" id="messages" rows="4"> </textarea>
+      </div>
+
+      <div class="send">
+        <input class="btn btn-default" type="submit" value="SEND">
+      </div>
+    </form>
+    </div>
+    </div>
+
+
+    <br>
+
+      <footer>
+        <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
+        <a href="#">Contact</a> |
+        <a href="http://www.jpl.nasa.gov/imagepolicy/">Image Policy</a> |
+        <a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a>
+     </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>

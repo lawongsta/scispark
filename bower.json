@@ -1,0 +1,21 @@
+{
+  "name": "dia-website",
+  "version": "0.0.0",
+  "authors": [
+    "Rishi Verma <rishi.verma@jpl.nasa.gov>"
+  ],
+  "description": "JPL-398M Group Website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://dia.jpl.nasa.gov",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

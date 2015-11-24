@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SciSpark Website</title>
+
+        <!-- Google Fonts -->
+
+        <!-- Bootstrap core CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Favicon -->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">SCISPARK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+             <li><a href="technology.html">TECHNOLOGY</a></li>
+            <li><a href="theteam.html">TEAM</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="navbar-right">
+          <img class="logo" src="images/logo_nasa_trio_black.png"</img>
+        </div>
+      </div>
+    </nav>
+
+      <div class="container">
+        
+        <h3> Technology </h3>
+        <p>SciSpark is implemented in a Java and Scala environment. Although Spark also offers a Python environment, and we recognize that most scientist are comfortable with Python as a programming language, this environment was chosen to avoid the known latency issues related to the communication overhead involved with copying data from the worker JVMs to Python daemon processes in the PySpark environment. Furthermore we wish to keep as much computation as possible in memory but in the PySpark environment, the driver JVM writes results to local disk that are then read by the Python process. 
+        See our latest paper for more details.</p> 
+
+        <h2> Partition, Extract, Transform, Load</h2> 
+        <p>Scientific array-based data from the network Common Data Form (netCDF) and Hierarchical Data Format (HDF) files are loaded into SciSpark using a Partition, Extract, Transform and Load (PETaL) process from local files or from remote protocols like OPeNDAP. More specifically, the PETaL layer first partitions by time ( by space to be added) and distributes the extraction of the data, transformation of it into a data type usable in SciSpark and loading into of it into the SciSpark engine to the compute nodes.</p>
+
+        <h2>sRDDs</h2>
+        <p>In the same way Spark exploits Resilient Distributed Datasets (RDDs), SciSpark contributes and exploits the Scientific RDD (sRDD) that corresponds to a multi-dimensional array representing a scientific measurement (grid) subset by space, or by time. The RDD notion directly enables the reuse of array data across multi-stage operations and it ensures data can be replicated, distributed and easily reconstructed in different storage tiers, e.g., memory for fast interactivity, SSDs for near real time, and spinning disk for later operations.</p>
+
+        <p>SciSpark defines the Scientific Resilient Distributed Dataset (sRDD), a distributed-computing array structure that supports multidimensional data and processing of scientific algorithms in the MapReduce paradigm. This is currently achieved through a self-documented array class called sciTensor that defines the data in the multi-dimensional format that scientists are accustomed to. 
+         <img class="diagram" src="images/SciSparkDiagram.png" height="900" width="830">
+
+        <br>
+
+
+        SciSpark currently provides methods to create sRDDs that (1) loads data from network Common Data Form (netCDF) and Hierarchical Data Format (HDF) files into the Hadoop Distributed File System (HDFS); (2) preserve the logical representation of structured and dimensional data in ; and (3) create a partition function that divides the multidimensional array by time (to be expanded to space as well).  sRDDs are cached (in memory) in the SciSpark engine support data reuse between multi-staged analytics.</p>
+         
+        <h2>SciSpark User Interface</h2>
+        <p>One of the key components of SciSpark is interactive sRDD visualizations. To accomplish
+        this SciSpark delivers a user interface through Apache Zeppelin. Zeppelin provides a notebook-type interface with an  interpreter that allows for any language or data-processing-backend to be plugged in. </p>
+
+        <h2>SciSpark OpenSource</h2>
+        <p>Our current development can be followed at on the SciSpark GitHub repo. SciSpark will eventually be delivered as open source under the Apache License, version 2 (“ALv2”) to
+        the Apache Software Foundation (ASF).</p> 
+
+        </div>
+
+
+      <footer>
+        <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
+        <a href="#">Contact</a> |
+        <a href="http://www.jpl.nasa.gov/imagepolicy/">Image Policy</a> |
+        <a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a>
+     </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
