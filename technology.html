@@ -23,7 +23,7 @@
 
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="container_nav">
         <ul class="nav navbar-nav">
             <li><a href="index.html">SCISPARK</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -50,10 +50,13 @@
         <p>In the same way Spark exploits Resilient Distributed Datasets (RDDs), SciSpark contributes and exploits the Scientific RDD (sRDD) that corresponds to a multi-dimensional array representing a scientific measurement (grid) subset by space, or by time. The RDD notion directly enables the reuse of array data across multi-stage operations and it ensures data can be replicated, distributed and easily reconstructed in different storage tiers, e.g., memory for fast interactivity, SSDs for near real time, and spinning disk for later operations.</p>
 
         <p>SciSpark defines the Scientific Resilient Distributed Dataset (sRDD), a distributed-computing array structure that supports multidimensional data and processing of scientific algorithms in the MapReduce paradigm. This is currently achieved through a self-documented array class called sciTensor that defines the data in the multi-dimensional format that scientists are accustomed to. 
+      </div>
+
+      <div class="container_diagram">
          <img class="diagram" src="images/SciSparkDiagram.png" height="900" width="830">
+      </div>
 
-        <br>
-
+      <div class="container">
 
         SciSpark currently provides methods to create sRDDs that (1) loads data from network Common Data Form (netCDF) and Hierarchical Data Format (HDF) files into the Hadoop Distributed File System (HDFS); (2) preserve the logical representation of structured and dimensional data in ; and (3) create a partition function that divides the multidimensional array by time (to be expanded to space as well).  sRDDs are cached (in memory) in the SciSpark engine support data reuse between multi-staged analytics.</p>
          
