@@ -38,19 +38,25 @@
         <h3>About</h3>
 
         <h2>Background</h2>
-        <p>Climate and weather directly impacts all aspects of society. To understand average climate conditions,  and extreme weather events, we need data from climate models and observations. These data are voluminous & heterogeneous -  varying spatial and temporal resolutions in   various scientific data formats. Provides important information for policy- and decision- makers, as well as for Earth science and climate change researchers.
-
-        Remote sensing data and climate model outputs are multi-dimensional and deal with massive sizes of files and metadata models making it extremely difficult to perform iterative science.  </p>
+        <p>Climate and weather directly impacts all aspects of society. Understanding these processes provide important information for policy- and decision- makers. To understand the average climate conditions and extreme weather events, Earth science and climate change researchers need data from climate models and observations. These data include remote sensing data and climate model outputs that are multi-dimensional, voluminous and heterogeneous -  varying both in spatial and temporal resolutions as well as in scientific data formats. As such in the typical work flow of climate change and atmospheric research, much time is wasted waiting to reformat and regrid data to homogeneous formats. Additionally, because of the data volume, inorder to compute metrics, perform analysis, and visualize data / generate plots, multi-stage processes with repeated I/O are used - the root cause of performance bottlenecks and the resulting user’s frustrations related to time inefficiencies.</p>
 
         <h2>Our Goal</h2>
-        <p>SciSpark is a lightning fast big data technology. It is a scalable system for interactive model evaluation and for the rapid developent of climate metrics and analysis to address the pain points in the current model evaluation process.  </p>
+        <p>SciSpark is <a href="http://esto.nasa.gov/files/solicitations/AIST_14/ROSES2014_AIST_A41_awards.html#mattmann">a NASA's Advance Information Systems Technology (AIST) program</a> funded project that seeks to provide a scalable system for interactive model evaluation and for the rapid developent of climate metrics and analysis to address the pain points in the current model evaluation process. SciSpark directly leverages the Apache Spark technology and its notion of Resilient Distributed Datasets (RDDs). RDDs represent an immutable data set that can be reused across multi-stage operations, partitioned across multiple machines and automatically reconstructed if a partition is lost. SciSpark extends the RDD for scientific data in through scientific Resilient Distributed Datasets (sRDDs).</p>
+        <p>One of the key components of SciSpark is interactive sRDD visualizations and to accomplish this SciSpark delivers a user interface built around the Data Driven Documents (D3) framework. D3 is an immersive, javascript based technology that exploits the underlying Document Object Model (DOM) structure of the web to create histograms, cartographic displays and inspections of climate variables and statistics. SciSpark is evaluated using several topical iterative scientific algorithms inspired by the <a href="https://rcmes.jpl.nasa.gov/"> NASA Regional Climate Model Evaluation System</a> project including machine learning (ML) based clustering of temperature PDFs and other quantities over North America, and graph-based algorithms for searching for Mesocale Convective Complexes in West Africa. </p>
 
           <h2>Learn More</h2>
-          <a href="https://github.com/SciSpark"> github.com/SciSpark </a>
-
+          <p> Follow our development at <a href="https://github.com/SciSpark"> github.com/SciSpark </a></p>
+          <u>Papers</u>
+          <ul>
+            <li>Palamuttam, Rahul, Renato Marroquín Mogrovejo, Christian Mattmann, Brian Wilson, Kim Whitehall, Rishi Verma, Lewis McGibbney, and Paul Ramirez.<a href="http://geo-bigdata.github.io/2015/papers/S08216.pdf">  "SciSpark: Applying In-memory Distributed Computing to Weather Event Detection and Tracking."</a>
+            </li>
+          </ul>
+          <u>Presentation and Posters</u>
+          <ul>
+            <li><a href="http://esto.nasa.gov/forum/estf2015/presentations/Mattmann_S1P8_ESTF2015.pdf"> Mattmann, Christian.(June, 2015) "SciSpark: Interactive and Highly Scalable Climate Model Analytics". Powerpoint presentation at NASA Earth Science Technology Forum 2015, Pasadena, CA.</a>
+            </li>
+          </ul>
         </div>
-
- 
           
             <footer>
               <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
