@@ -45,8 +45,9 @@
          <img class="diagram" src="images/SciSparkDiagram.png" height="900" width="830">
          <figcaption>Fig1. - SciSpark Architecture.</figcaption>
         </div>
+        <br>
 
-        <p>SciSpark is implemented in a Java and Scala Spark environment. Although Spark also offers a Python environment and we recognize that most scientists are comfortable using Python as a programming language, this Spark environment was chosen to avoid the known latency issues related to the communication overhead involved with copying data from the worker JVMs to Python daemon processes in the PySpark environment. Furthermore, we wish to maximize on in-memory computation but in the PySpark environment the driver JVM writes results to local disk that are then read by the Python process. </p>
+        <p class="test">SciSpark is implemented in a Java and Scala Spark environment. Although Spark also offers a Python environment and we recognize that most scientists are comfortable using Python as a programming language, this Spark environment was chosen to avoid the known latency issues related to the communication overhead involved with copying data from the worker JVMs to Python daemon processes in the PySpark environment. Furthermore, we wish to maximize on in-memory computation but in the PySpark environment the driver JVM writes results to local disk that are then read by the Python process. </p>
         <p>Please see <a href=" http://geo-bigdata.github.io/2015/papers/S08216.pdf">our latest paper "Palamuttam, Rahul, Renato Marroquín Mogrovejo, Chris Mattmann, Brian Wilson, Kim Whitehall, Rishi Verma, Lewis McGibbney, and Paul Ramirez. "SciSpark: Applying In-memory Distributed Computing to Weather Event Detection and Tracking."</a> for more details.</p> 
 
         <h2>Partition, Extract, Transform, Load</h2> 

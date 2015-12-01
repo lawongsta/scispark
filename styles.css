@@ -119,15 +119,45 @@ div.container-calltoaction{
   background-color: #3268cc;
 }
 
-.test{
-  padding-top: 100px;
+div.logos{
+  padding-top: 1px;
 }
+
+div.col-md-4.logos{
+  -webkit-filter: grayscale(100%);
+  text-align: center;
+}
+
+div.col-md-4.logos:hover{
+    -webkit-filter: grayscale(0%);
+  }
+
+div.col-md-4{
+  text-align: center;
+}
+
+div.col-md-4.nasa{
+  padding-top: 25px;
+  -webkit-filter: grayscale(100%);
+  text-align: center;
+}
+
+
+div.col-md-4.nasa:hover{
+    -webkit-filter: grayscale(0%);
+  }
+
 /*Styling About Page*/
 
 /*Styling Technology Page*/
 .container_diagram{
-   padding: 40px 60px 40px 60px;
    text-align: center;
+}
+
+
+img.diagram{
+  width:600px;
+  height:600px;
 }
 /*Styling The Team Page*/
   .row{
@@ -164,6 +194,7 @@ div.container-calltoaction{
   form{
     margin: 0px auto;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 6%;
   }
 
   form div label p{
@@ -185,8 +216,9 @@ div.container-calltoaction{
   form div input.name{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 100%;
+    width: 30%;
     background-color:  #E7E5E4;
+    outline: none;
   }
 
   form div input.name:hover{
@@ -197,8 +229,9 @@ div.container-calltoaction{
   form div input.email{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 90%;
+    width: 30%;
     background-color:  #E7E5E4;
+    outline: none;
   }
 
   form div input.email:hover{
@@ -209,8 +242,9 @@ div.container-calltoaction{
   form div input.company{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 70%;
+    width: 30%;
     background-color:  #E7E5E4;
+    outline: none;
   }
 
   form div input.company:hover{
@@ -222,8 +256,9 @@ div.container-calltoaction{
     width: 100%;
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 60%;
+    width: 40%;
     background-color:  #E7E5E4;
+    outline: none;
   }
 
   form textarea:hover{
@@ -231,14 +266,20 @@ div.container-calltoaction{
     opacity: .3;
   }
 
+iframe{
+  padding-top: 200px;
+}
 /*Styling Footer*/
 
   footer {
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-position: 0% 25%;
-    background-color: #F3F5F8;
+    background-color: black;
+    color: white;
     text-align: center;
   }
 
