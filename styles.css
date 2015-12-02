@@ -13,7 +13,7 @@ Primary use:	Information*/
   body {
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 17px;
     background-color: #F3F5F8;
     color: black;
@@ -28,7 +28,7 @@ Primary use:	Information*/
   }
 
    .container{
-      padding: 40px 60px 40px 60px;
+      padding: 40px 60px 60px 60px;
       background-color: #F3F5F8;
     }
 
@@ -194,7 +194,7 @@ img.diagram{
   form{
     margin: 0px auto;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-left: 6%;
+    padding-left: 20%;
   }
 
   form div label p{
@@ -208,28 +208,16 @@ img.diagram{
   }
 
   form> div label{
-    width: 300px;
+    width: 600px;
     display: inline-block;
     border: none;
   }
 
-  form div input.name{
-    border: none;
-    border-bottom: 1px solid #645B43;
-    width: 30%;
-    background-color:  #E7E5E4;
-    outline: none;
-  }
-
-  form div input.name:hover{
-    background-color: #FC2C2B;
-    opacity: .3;
-  }
 
   form div input.email{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 30%;
+    width: 60%;
     background-color:  #E7E5E4;
     outline: none;
   }
@@ -239,24 +227,11 @@ img.diagram{
     opacity: .3;
   }
 
-  form div input.company{
-    border: none;
-    border-bottom: 1px solid #645B43;
-    width: 30%;
-    background-color:  #E7E5E4;
-    outline: none;
-  }
-
-  form div input.company:hover{
-    background-color: #FC2C2B;
-    opacity: .3;
-  }
-
   form textarea {
     width: 100%;
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 40%;
+    width: 60%;
     background-color:  #E7E5E4;
     outline: none;
   }
@@ -267,7 +242,8 @@ img.diagram{
   }
 
 iframe{
-  padding-top: 200px;
+  padding-top: 100px;
+  padding-right: 20px;
 }
 /*Styling Footer*/
 
