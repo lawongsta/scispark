@@ -13,52 +13,56 @@ Primary use:	Information*/
   body {
     padding-top: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
-    font-size: 17px;
+    font-weight: 200;
     background-color: #F3F5F8;
     color: black;
   }
 
-  h3{ 
+  h1{
     font-size: 3.5em;
     font-weight: bold;
     line-height: 1.1em;
     text-transform: uppercase;
-    padding: 2%;
   }
 
-   .container{
-      padding: 40px 60px 40px 60px;
-      background-color: #F3F5F8;
-    }
+  h1.hero{
+    color: white;
+  }
+
+  img.logo {
+    height: 50px;
+  }
+
+  .navbar{
+    padding: 0px 0px 0px 4%;
+  }
 
     .container_nav{
-      padding: 20px 60px 70px 60px;
-      background-color: #F3F5F8;
-    }
-    .navbar {
-      max-height: 10px;
-      border-bottom: none;
-      background-color: #F3F5F8;
+    background-color: #F3F5F8;
+    padding: 0px 0px 0px 2%;
     }
 
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: 0px;
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-      color: black;
-    }
-
-    .navbar-inverse .navbar-nav > li > a:hover {
+   .navbar-nav > li > a {
       color: #3268cc;
     }
 
-    img.logo {
-    height: 50px;
+    .navbar .navbar-nav > li > a:hover {
+      color: #3268cc;
     }
 
+    nav.navbar.navbar-default.navbar-static-top{
+      background-color: #F3F5F8;
+      text-decoration: none;
+    }
 
+.containter{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 /*Styling Home Page*/
 
   div.jumbotron{
@@ -66,74 +70,84 @@ Primary use:	Information*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    max-height: 600px;
-    padding-top: 100px;
-  }
-
-
-  h3.hero{
-    font-size: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    text-rendering:optimizeLegibility;
-    color:#E7E5E4;
-    padding-bottom: 0%;
-    position: relative;
   }
 
   p.subtitle {
     color: white;
     text-align: center;
-    text-shadow: none;
     font-size: 20px;
     padding-bottom: 4%;
   }
 
-.container_main{
-  padding: 50px 50px 10px 50px;
-  text-align: center;
+  .container_main{
+    padding: 40px 15% 10px 15%;
+    text-align: center;
+  }
+
+  div.container-centered {
+    text-align: center;
+  }
+
+  div.container-calltoaction{
+    text-align: center;
+  }
+
+  .btn.btn-about {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    border-radius: .5px;
+    border: none;
+    background-color: #21428E;
+    color: white;
+    font-weight: 100;
+  }
+
+div.col-md-4.button{
+  padding-bottom: 5%;
 }
 
-div.container-centered {
-  text-align: center;
-}
+  .btn.btn-contact {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    border-radius: .5px;
+    border: none;
+    background-color: #21428E;
+    color: white;
+    font-weight: 100;
+  }
 
-div.container-calltoaction{
-  text-align: center;
-}
+  .btn.btn-default:hover{
+    background-color: #3268cc;
+  }
 
-.btn.btn-default {
-  padding-left: 42px;
-  padding-right: 42px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: right;
-  border-radius: .5px;
-  border: none;
-  background-color: #21428E;
-  color: white;
-  font-weight: 100;
-}
+  .test{
+    padding-top: 100px;
+  }
 
-.btn.btn-default:hover{
-  background-color: #3268cc;
-}
-
-.test{
-  padding-top: 100px;
-}
 /*Styling About Page*/
 
 /*Styling Technology Page*/
-.container_diagram{
-   padding: 40px 60px 40px 60px;
-   text-align: center;
+
+div.container_diagram{
+  text-align: center;
 }
+
+img.diagram{
+  height:100%;
+  width:70%;
+}
+
 /*Styling The Team Page*/
   .row{
     margin:70px;
   }
-  
+
   .caption{
     text-align: center;
   }
@@ -149,14 +163,11 @@ div.container-calltoaction{
   }
 
   .circular {
-    width: 175px;
-    height: 175px;
+    width: 80%;
+    height: 80%;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-filter: grayscale(100%);
     }
 
@@ -185,7 +196,7 @@ div.container-calltoaction{
   form div input.name{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 100%;
+    width: 40%;
     background-color:  #E7E5E4;
   }
 
@@ -197,7 +208,7 @@ div.container-calltoaction{
   form div input.email{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 90%;
+    width: 40%;
     background-color:  #E7E5E4;
   }
 
@@ -209,7 +220,7 @@ div.container-calltoaction{
   form div input.company{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 70%;
+    width: 40%;
     background-color:  #E7E5E4;
   }
 
@@ -222,7 +233,7 @@ div.container-calltoaction{
     width: 100%;
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 60%;
+    width: 40%;
     background-color:  #E7E5E4;
   }
 
@@ -241,4 +252,3 @@ div.container-calltoaction{
     background-color: #F3F5F8;
     text-align: center;
   }
-
