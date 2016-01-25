@@ -20,7 +20,7 @@ Primary use:	Information*/
   }
 
   h1{
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.1em;
     text-transform: uppercase;
@@ -60,7 +60,28 @@ Primary use:	Information*/
       text-decoration: none;
     }
 
-.containter{
+a.accessible {
+position:absolute;
+left:-1000px;
+top:-1000px;
+width:1px;
+height:1px;
+text-align: left;
+overflow:hidden;
+}
+
+a.accessible:focus, a.accessible:active, a.accessible:hover {
+position:absolute;
+left:0;
+top:0;
+width:auto;
+height:auto;
+overflow:visible;
+background-color:#FF3;
+border: 1px dotted #000;
+}
+
+.container{
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -71,6 +92,7 @@ Primary use:	Information*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 10%;
   }
 
   p.subtitle {
@@ -131,6 +153,12 @@ div.col-md-4.button{
     padding-top: 100px;
   }
 
+  .thumbnail{
+    width: 80%;
+    height: 80%;
+    -webkit-filter: grayscale(100%);
+  }
+
 /*Styling About Page*/
 
 /*Styling Technology Page*/
@@ -142,6 +170,11 @@ div.container_diagram{
 img.diagram{
   height:100%;
   width:70%;
+}
+
+p.thumbnails{
+  font-size: 12px;
+  font-style: italic;
 }
 
 /*Styling The Team Page*/
@@ -180,12 +213,13 @@ img.diagram{
 
   form div label p{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 17px;
   }
 
   form > div{
-    padding: 10px 20px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
   }
 
   form> div label{
@@ -197,7 +231,8 @@ img.diagram{
   form div input.name{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 40%;
+    width: 350px;
+    origin/master
     background-color:  #E7E5E4;
   }
 
@@ -209,7 +244,7 @@ img.diagram{
   form div input.email{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 40%;
+    width: 350px;
     background-color:  #E7E5E4;
   }
 
@@ -221,7 +256,7 @@ img.diagram{
   form div input.company{
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 40%;
+    width: 350px;
     background-color:  #E7E5E4;
   }
 
@@ -234,7 +269,7 @@ img.diagram{
     width: 100%;
     border: none;
     border-bottom: 1px solid #645B43;
-    width: 40%;
+    width: 350px;
     background-color:  #E7E5E4;
   }
 

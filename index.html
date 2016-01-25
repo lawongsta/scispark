@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,8 @@
 
   <body>
 
+
+    <a class="accessible" href="#maincontent">[Skip to Content]</a>
     <div class="navbar">
       <img class="logo" src="images/logo_nasa_trio_black.png"</img>
     </div>
@@ -40,7 +42,8 @@
     </nav>
 
 
-
+      <div class="container">
+        <a name="maincontent"></a>
 
 
       <div class="container">
@@ -60,27 +63,63 @@
               </p>
             </div>
 
-            <div class="container-calltoaction">
-            <div class="row">
-              <div class="col-md-2"></div>
-                 <div class="col-md-4 button">
-                    <a class="btn btn-about" href="about.html" role="button">ABOUT </a>
-                 </div>
-                 <div class="col-md-4">
-                    <a class="btn btn-contact" href="contact.html" role="button">CONTACT</a>
-                </div>
-            </div>
+
+          <div class="row tiles">
+               <div class="col-md-4">
+                 <a href="http://esto.nasa.gov/forum/estf2015/presentations/Mattmann_S1P8_ESTF2015.pdf">
+                 <img class="thumbnail" src="images/presentation.jpg"</img>
+                 <p class="thumbnails">
+                "Interactive and Highly Scalable Climate Model Analytics" presentation by Chris Mattmann at NASA Earth Science Technology Forum 2015, Pasadena, CA.</p>
+              </a>
+              </div>
+
+              <div class="col-md-4">
+                <a href="https://www.youtube.com/watch?v=Q5Mr-UQU7_o">
+                <img class="thumbnail" src="images/interview.jpg"</img>
+               <p class="thumbnails">Interview with Chris Mattmann, Chief Architect of Instruments and Science Data at NASA JPL at Spark Summit 2015</p></a>
+              </div>
+
+              <div class="col-md-4">
+                 <a href="http://geo-bigdata.github.io/2015/papers/S08216.pdf">
+                 <img class="thumbnail" src="images/paper.jpg"</img>
+                <p class="thumbnails">SciSpark Paper: Applying In-memory Distributed Computing to Weather Event Detection and Tracking</p> </a>
+             </div>
+
           </div>
+
+          <div class="container-calltoaction">
+
+
+              <h2> Learn more about the developing technologies of SciSpark.</h2>
+              <p> Follow our development at<a href="https://github.com/SciSpark"> github.com/SciSpark</a>
+
+              </p>
+
+
+          <div class="row">
+            <div class="col-md-2"></div>
+               <div class="col-md-4 button">
+                  <a class="btn btn-about" href="about.html" role="button">ABOUT </a>
+               </div>
+               <div class="col-md-4">
+                  <a class="btn btn-contact" href="contact.html" role="button">CONTACT</a>
+              </div>
+          </div>
+        </div>
+
       </div>
-
-
+    </div>
 
       <footer>
+          <p>Some of these documents require the <a href="http://www.adobe.com">Adobe Reader</a>. Download <a href="https://get.adobe.com/reader/">here</a> if you do not have this browser plug-in installed. </p>
         <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
-        <a href="#">Contact</a> |
+        <a href="contact.html">Contact</a>  |
         <a href="http://www.jpl.nasa.gov/imagepolicy/">Image Policy</a> |
         <a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a>
+        <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=SCISPARK&dclink=true&sp=search,s"></script>
+
      </footer>
+
 
 
 
