@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /bower_components
+Disallow: styles.css
+Disallow: README.md
+Disallow: bower.json
