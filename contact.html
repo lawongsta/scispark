@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
     <title>SciSpark Website</title>
 
     <!-- Google Fonts -->
-  
+
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +20,13 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <a class="accessible" href="#maincontent">[Skip to Content]</a>
+
+    <div class="navbar">
+      <img class="logo" src="images/logo_nasa_trio_black.png"</img>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container_nav">
         <ul class="nav navbar-nav">
            <li><a href="index.html">SCISPARK</a></li>
@@ -29,15 +35,16 @@
             <li><a href="theteam.html">TEAM</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
-        <div class="navbar-right">
-          <img class="logo" src="images/logo_nasa_trio_black.png"</img>
-        </div>
-      </div>
+     </div>
     </nav>
 
- 
+<div class="row">
+ <div class="col-md-6">
+
     <div class="container">
-   <h3>Contact</h3>
+    <a name="maincontent"></a>
+
+    <h1>Contact</h1>
 
     <form method="post" action="mailto:scispark-team@jpl.nasa.gov" id="ContactForm">
 
@@ -66,17 +73,19 @@
       </div>
     </form>
     </div>
+  </div>
     </div>
-
+  </div>
 
     <br>
 
       <footer>
         <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
-        <a href="#">Contact</a> |
+        <a href="contact.html">Contact</a>  |
         <a href="http://www.jpl.nasa.gov/imagepolicy/">Image Policy</a> |
         <a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a>
      </footer>
+
 
 
     <!-- Bootstrap core JavaScript
