@@ -1,8 +1,8 @@
-/*Project:	Scispark Website
-Version:	1
-Last change:	11/15/2015
-Assigned to:	Lauren Wong
-Primary use:	Information*/
+/*Project:  Scispark Website
+Version:  1
+Last change:  11/15/2015
+Assigned to:  Lauren Wong
+Primary use:  Information*/
 
 /*Styling Global Pages*/
 
@@ -85,8 +85,15 @@ border: 1px dotted #000;
   padding-left: 5%;
   padding-right: 5%;
 }
-/*Styling Home Page*/
 
+div.second{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+}
+/*Styling Home Page*/
   div.jumbotron{
     background-image: url("images/lightning3.jpg");
     background-position: center;
@@ -157,6 +164,11 @@ div.col-md-4.button{
     width: 80%;
     height: 80%;
     -webkit-filter: grayscale(100%);
+  }
+
+  .thumbnail2{
+    width: 100%;
+    height: 100%;
   }
 
 /*Styling About Page*/
