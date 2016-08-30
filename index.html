@@ -19,27 +19,28 @@
 
         <!-- Favicon -->
 
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+        <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+        </script>
+
   </head>
 
   <body>
 
 
     <a class="accessible" href="#maincontent">[Skip to Content]</a>
-    <div class="navbar">
-      <img class="logo" src="images/logo_nasa_trio_black.png" alt="NASA logo"</img>
-    </div>
-
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container_nav">
-        <ul class="nav navbar-nav">
-           <li><a href="index.html">SCISPARK</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-             <li><a href="technology.html">TECHNOLOGY</a></li>
-            <li><a href="theteam.html">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-     </div>
-    </nav>
+    <div id="header"></div>
 
 
       <div class="container">
@@ -122,29 +123,12 @@
                    </a>
                  </div>
               </div>
+              <p>Some of these documents require <a href="http://www.adobe.com">Adobe Reader</a>. Download <a href="https://get.adobe.com/reader/">here</a> if you do not have this browser plug-in installed. </p>
+
       </div>
     </div>
 
-      <footer>
-          <p>Some of these documents require <a href="http://www.adobe.com">Adobe Reader</a>. Download <a href="https://get.adobe.com/reader/">here</a> if you do not have this browser plug-in installed. </p>
-        <a href="http://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a> |
-        <a href="contact.html">Contact</a>  |
-        <a href="http://www.jpl.nasa.gov/imagepolicy/">Image Policy</a> |
-        <a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a>
-        <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=SCISPARK&dclink=true&sp=search,s"></script>
-
-     </footer>
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <div id="footer"></div>
 
   </body>
 </html>
