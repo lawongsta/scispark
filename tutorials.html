@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SciSpark Website</title>
+
+        <!-- Google Fonts -->
+
+        <!-- Bootstrap core CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Favicon -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+        <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+        </script>
+
+  </head>
+
+  <body>
+
+
+    <a class="accessible" href="#maincontent">[Skip to Content]</a>
+
+    <!-- Note: header content is in header.html and pulled in by jquery script in the head -->
+    <div id="header"></div>
+
+
+      <div class="container">
+        <a name="maincontent"></a>
+
+
+      <div class="container">
+        <div class="jumbotron">
+
+          <div class="container-centered">
+            <h1 class="hero">SciSpark</h1>
+              <p class="subtitle">
+                 Distributed Computing for Large-Scale Climate Science and Analytics
+              </p>
+          </div>
+        </div>
+
+            <div class="container_main">
+              <h2> SciSpark is a lightning fast big data technology. </h2>
+              <p> It is a scalable system for interactive model evaluation and for the rapid development of climate metrics and analysis to address the pain points in the current model evaluation process.
+              </p>
+            </div>
+
+
+          <div class="row tiles">
+               <div class="col-md-4">
+                 <a href="http://esto.nasa.gov/forum/estf2015/presentations/Mattmann_S1P8_ESTF2015.pdf">
+                 <img class="thumbnail" src="images/presentation.jpg" alt="Thumbnail image of ESTF presentation"</img>
+                 <p class="thumbnails">
+                "Interactive and Highly Scalable Climate Model Analytics" presentation by Chris Mattmann at NASA Earth Science Technology Forum 2015, Pasadena, CA.</p>
+              </a>
+              </div>
+
+              <div class="col-md-4">
+                <a href="https://www.youtube.com/watch?v=Q5Mr-UQU7_o">
+                <img class="thumbnail" src="images/interview.jpg" alt="Thumbnail image of interview"</img>
+               <p class="thumbnails">Interview with Chris Mattmann, Chief Architect of Instruments and Science Data at NASA JPL at Spark Summit 2015</p></a>
+              </div>
+
+              <div class="col-md-4">
+                 <a href="http://geo-bigdata.github.io/2015/papers/S08216.pdf">
+                 <img class="thumbnail" src="images/paper.jpg" alt="Thumbnail image of paper"</img>
+                <p class="thumbnails">SciSpark Paper: Applying In-memory Distributed Computing to Weather Event Detection and Tracking</p> </a>
+             </div>
+          </div>
+
+          <div class="container-calltoaction">
+            <div class="row">
+              <div class="col-md-2"></div>
+                 <div class="col-md-4 button">
+                    <a class="btn btn-about" href="about.html" role="button">ABOUT </a>
+                 </div>
+                 <div class="col-md-4">
+                    <a class="btn btn-contact" href="contact.html" role="button">CONTACT</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="second">
+              <h2> Upcoming SciSpark Workshops</h2>
+                  <p>We introduce a 3-part course module on SciSpark, our AIST14 funded project for Highly Interactive and Scalable Climate model Metrics and Analytics. The three part course session introduces a 101, 201, and 301 class for learning how to use SciSpark for science.
+                  </p>
+          </div>
+              <div class="row tiles">
+                   <div class="col-md-4">
+                     <a href="http://commons.esipfed.org/node/9028">
+                     <img class="thumbnail2" src="images/101.png"</img>
+                  </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a href="http://commons.esipfed.org/node/9029">
+                    <img class="thumbnail2" src="images/201.png"</img>
+                 </a>
+                  </div>
+
+                  <div class="col-md-4">
+                     <a href="http://commons.esipfed.org/node/9030">
+                     <img class="thumbnail2" src="images/301.png"</img>
+                   </a>
+                 </div>
+              </div>
+              <p>Some of these documents require <a href="http://www.adobe.com">Adobe Reader</a>. Download <a href="https://get.adobe.com/reader/">here</a> if you do not have this browser plug-in installed. </p>
+
+      </div>
+    </div>
+
+    <!-- Note: footer content is in footer.html and pulled in by jquery script in the head -->
+    <div id="footer"></div>
+
+  </body>
+</html>
