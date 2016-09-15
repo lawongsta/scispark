@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SciSpark Website</title>
+
+        <!-- Google Fonts -->
+
+        <!-- Bootstrap core CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Favicon -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+        <script>
+        $(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+        </script>
+
+  </head>
+
+  <body>
+
+
+    <a class="accessible" href="#maincontent">[Skip to Content]</a>
+
+    <!-- Note: header content is in header.html and pulled in by jquery script in the head -->
+    <div id="header"></div>
+
+
+      <div class="container">
+        <a name="maincontent"></a>
+
+        <h1> Tutorials </h1>
+
+        <p>We initially developed these tutorials for a full day of training at <a href="http://esipfed.org/">ESIP</a> Summer 2016. We have improved on them since then, and welcome any additional suggestions you may have.
+        </p>
+        <p>The training materials include our presentations, a docker file so you can install and work on SciSpark, and a collection of Notebooks for SciSpark with training examples you can follow and work through.
+        </p>
+
+        <h2> Presentations </h2>
+
+        <div class="row tiles">
+             <div class="col-md-4">
+               <a href="/docs/SciSpark-101.pdf">
+                 <img class="thumbnail2" src="images/scispark-101-pdf.png" alt="Thumbnail image of SciSpark 101 presentation"</img>
+                 <p class="thumbnails">Introduction to Spark
+                 </p>
+               </a>
+             </div>
+
+             <div class="col-md-4">
+               <a href="/docs/SciSpark-201.pdf">
+                 <img class="thumbnail2" src="images/scispark-201-pdf.png" alt="Thumbnail image of SciSpark 201 presentation"</img>
+                 <p class="thumbnails">Searching for MCCs
+                 </p>
+               </a>
+             </div>
+
+             <div class="col-md-4">
+               <a href="/docs/SciSpark-301.pdf">
+                 <img class="thumbnail2" src="images/scispark-301-pdf.png" alt="Thumbnail image of SciSpark 301 presentation"</img>
+                 <p class="thumbnails">Build your own Climate Metrics
+                 </p>
+               </a>
+             </div>
+        </div>
+
+        <p><i>These documents require <a href="http://www.adobe.com">Adobe Reader</a>. Download <a href="https://get.adobe.com/reader/">here</a> if you do not have this browser plug-in installed. </i></p>
+
+        <h2> Github Links </h2>
+        <p>Download and install the following to work through the trainings:
+
+        <a href="https://github.com/SciSpark/docker-scispark-zeppelin">Docker</a> | <a href="https://github.com/SciSpark/scispark_zeppelin_notebooks">Notebooks</a>
+
+        <h2>Additional Info</h2>
+        <p>These are the original course descriptions and additional notes on what each training above contains.
+        </p>
+
+        <h3>SciSpark 101: Introduction to Spark</h3>
+
+        <strong>Abstract/Agenda:</strong>
+        <p>We introduce a 3 part course module on <a href="http://sciscpark.jpl.nasa.gov">SciSpark</a>, our AIST14 funded project for Highly Interactive and Scalable Climate Model Metrics and Analytics. The three part course session includes 101, 201, and 301 classes for learning how to use Spark for science.</p>
+        <p>SciSpark 101 is a 1.5 hour session in which we will use SciSpark to introduce the fundamental concepts required to develop new programs and convert existing programs to take advantage of Spark. This will include an overview of <a href="http://zeppelin.apache.org/">Apache Zeppelin</a>, <a href="https://spark.apache.org/">Spark</a>, and <a href="https://hadoop.apache.org/">Hadoop</a> and also cover the concepts of filter, map, reduce, collect, and counter. We will work within the SciSpark environment using both Scala and Python as a functional programming language.</p>
+
+        <strong>Notes:</strong>
+        <p>Intro. to SciSpark:</p>
+        <p>a.Funded by AIST project<br>
+          b. Motivation for SciSpark: in memory and frequent data reuse operations for earth science<br>
+          c. envisioned architecture: Zeppelin as the front end<br>
+          d. an analytics engine for science data
+        </p>
+        <ol>
+          <li>I/O bottleneck</li>
+          <li>Extend native Spark on JVM: handle earth science geolocation arrays; netCDF/OpenDAP data ingest; array operation like numpy; two complex use case: Mesoscale Convective Systems (MCS) and probability density function (PDF) clustering of atmospheric state</li>
+          <li>PySpark Gateway</li>
+          <li>Three challenges: Adapting Spark RDD to geospatial 2D/3D</li>
+          <li>Parallel computing styles: parallelize over time/over space/variable, model, metrics, parameters</li>
+          <li>sRDD transformation and actions</li>
+          <li>sciSpark extensions for netCDF</li>
+          <li>SciSpark front-end: scala, python, spark sql; Notebooks automatic connects to spark-shell</li>
+          <li>Apache Zeppelin, SciSpark, sRDD</li>
+          <li>Virtual machines with SciSpark were given to attendees.</li>
+        </ol>
+        <p>Warm up -101-1: intro. To Spark: some basic examples, such as work count<br>
+        101-2 SparkSQL and DataFrames: USEFUL FOR EARTH scientific data: e.g. csv<br>
+        Using the SparkSQL package for discovery within the Storm Database<br>
+        Load csv data -&gt; clean data -&gt; create schema for Dataframe -&gt; run Spark SQL to query the dataframe with ‘typical’ RDD operations.</p>
+        <p>Parallel Statistical Rollups for a Time-Series of Grids</p>
+        <ol>
+          <li>Compute per-pixel</li>
+          <li>Statistic algorithms:</li>
+          <li>Rollup statistics by Daily, monthly, yearly</li>
+        </ol>
+        <p>Demo: Parallel Statistical Rollups for a Time-Series of Grids</p>
+        <ol>
+          <li>Read files using OpeNDAP, and split URL’s by month;</li>
+          <li>Define accumulate function -&gt; update accumulators for a set of variable grids</li>
+          <li>Define combine function to merge accumulators to Go from Monthly to seasonal to yearly to total</li>
+          <li>Define function to compute final statistics from the accumulators</li>
+          <li>Define function to write stats to netcdf file</li>
+        </ol>
+
+        <h3>SciSpark 201: Searching for MCCs</h3>
+
+        <strong>Abstract/Agenda:</strong>
+        <p>We introduce a 3 part course module on <a href="http://sciscpark.jpl.nasa.gov">SciSpark</a>, our AIST14 funded project for Highly Interactive and Scalable Climate Model Metrics and Analytics. The three part course session includes 101, 201, and 301 classes for learning how to use Spark for science.</p>
+        <p>SciSpark 201 is a 1.5 hour session in which we will use the search for Mesoscale Convective Complexes (MCCs) in Satellite Infrared data to show a real world example of how SciSpark enables real time response to both search queries and modifications to the underlying code. This task is representative of the motivation behind SciSpark - &nbsp;iterative data-reuse algorithms that share information between multiple stages.</p>
+        <ul>
+          <li>Whitehall, Kim, et al. "Exploring a graph theory based algorithm for automated identification and characterization of large mesoscale convective systems in satellite datasets." Earth Science Informatics 8.3 (2015): 663-675.</li>
+          <li><a href="https://github.com/kwhitehall/grab-tag-graph">Implementation of Grab 'Em, Tag 'Em, Graph 'Em (GTG) algorithm</a> in Python.</li>
+        </ul>
+        <strong>Notes:</strong>
+        A two-pronged approach to Spark<br>
+        1.&nbsp;The goal of scientific RDD(sRDD)?&nbsp;The scientific Resilient Distributed Dataset (sRDD), exploits Apache Spark's concept of RDDs for multi-dimensional data representing a scientific measurement that can be subset by time, or by space. The sRDD supports multidimensional data and processing of scientific algorithms in the MapReduce paradigm within a distributed environment.</p>
+        <p>2. sciTensor<br>
+        The sciTensor datatype is a self-documented array that keeps a list of arrays for a variable arrays and maintains associated metadata in a hashmap. The sciTensor is read into the sRDD and the data within is operated on via arithmetic and relational operations. sciTensor can load data from: HDFS, OpeNDap, and local FS.</p>
+        <p>3. Demo<br>
+        Data visualization:<br>
+        Scala RDD -&gt; Python RDD -&gt; python visualization<br>
+        Use case: Mesoscale convective complexes</p>
+        <ul>
+          <li>Data: brightness temperature data</li>
+          <li>Nodes: areas with a given brightness temperature value and a given size</li>
+          <li>Edges: determined by area overlaps between nodes within consecutive time periods</li>
+          <li>Identify nodes and edges</li>
+          <li>Find cloud elements and connect the cloud elements between frames.</li>
+          <li>Find the subgraphs of cloudy areas that have evolve in time</li>
+        </ul>
+
+        <h3>SciSpark 301: Build your own Climate Metrics</h3>
+
+        <strong>Abstract/Agenda:</strong>
+        <p>We introduce a 3 part course module on&nbsp;<a href="http://sciscpark.jpl.nasa.gov/">SciSpark</a>, our AIST14 funded project for Highly Interactive and Scalable Climate Model Metrics and Analytics. The three part course session introduces a 101, 201, and 301 class for learning how to use Spark for science.</p>
+        <p>SciSpark 301 is a 1.5 hr course in which we will provide lessons learned from our experience in SciSpark as well as a selection of notebooks for attendees to explore, learn from, expand on, and venture out on their own. This session is intended for individuals who have a desire to play with SciSpark and investigate its possible uses in their own work. We plan to have notebooks prepared that show use of a K-means clustering algorithm for identification of Probability Density Functions for climate extremes, the Open Climate WorkBench, and the Climate Model Diagnostic Analyzer. This session will include ample time for more in-depth discussion and problem-solving of attendees’ interests.</p>
+        <ul>
+          <li>Lee, Seungwon, et al. "Climate model diagnostic analyzer." Big Data (Big Data), 2015 IEEE International Conference on. IEEE, 2015.</li>
+          <li>Loikith, Paul C., et al. "Surface Temperature Probability Distributions in the NARCCAP Hindcast Experiment: Evaluation Methodology, Metrics, and Results." Journal of Climate 28.3 (2015): 978-997.</li>
+        </ul>
+        <strong>Notes:</strong>
+        <p>Goals for expanding SciSpark outside of MCC, PDF, and other cases</p>
+        <ol>
+          <li>Data Reuse Tasks:Sparkler, Data Science (web crawling on Spark <a href="http://github.com/USCDataScience/sparkler/">http://github.com/USCDataScience/sparkler/</a>)</li>
+          <li>Science: search analytics, RCMES (Regional Climate Model Evaluation System)</li>
+        </ol>
+        <p>Use case: use K-means clustering to group grid points together based on similarities in probability density function clustering</p>
+        <p>Climate Model Diagnostic Analyzer (CMDA)</p>
+        <ol>
+          <li>Goal: develop a technology to help Earth scientists create and manage workflows for scientific calculations.</li>
+          <li>Provenance-powered workflow:</li>
+        </ol>
+        <ul>
+          <li>Read JSON from the frontend</li>
+          <li>Anomaly calculation web service call by REST call</li>
+          <li>Time series web service call by dataURL from previous call</li>
+        </ul>
+        <p>Spark Idioms/Lessons Learned</p>
+        <ol>
+          <li>Partition data as needed to main “data locality” for algorithms</li>
+          <li>Be careful about ‘collect’</li>
+          <li>“Never” use GroupByKey, use Re-Keying and GroupByKey to replicate data</li>
+          <li>Use accumulators instead of multiple reduces or collects</li>
+          <li>In spark shells or notebooks, global variables won’t be pulled into lambda expressions, please use Literals</li>
+          <li>JVM performance: memory issues; monitor garbage collection.</li>
+        </ol>
+
+    </div>
+
+    <!-- Note: footer content is in footer.html and pulled in by jquery script in the head -->
+    <div id="footer"></div>
+
+  </body>
+</html>
