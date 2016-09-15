@@ -21,7 +21,6 @@
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -52,10 +51,10 @@
 
         <p>We initially developed these tutorials for a full day of training at <a href="http://esipfed.org/">ESIP</a> Summer 2016. We have improved on them since then, and welcome any additional suggestions you may have.
         </p>
-        <p>The training materials include PDFs of our presentations, a docker file so you can install and work on SciSpark, and a collection of Notebooks for SciSpark with training examples you can follow and work through.
+        <p>The training materials include PDF files of our presentations, a docker file so you can install and work on SciSpark, and a collection of Notebooks for SciSpark with training examples you can follow and work through.
         </p>
 
-        <h2> Presentations (PDFs) </h2>
+        <h2> Presentations (PDF files) </h2>
 
         <div class="row tiles">
              <div class="col-md-4">
@@ -109,14 +108,14 @@
         </p>
         <ol>
           <li>I/O bottleneck</li>
-          <li>Extend native Spark on JVM: handle earth science geolocation arrays; netCDF/OpenDAP data ingest; array operation like numpy; two complex use case: MCS and PDF clustering of atmospheric state</li>
+          <li>Extend native Spark on JVM: handle earth science geolocation arrays; netCDF/OpenDAP data ingest; array operation like numpy; two complex use case: Mesoscale Convective Systems (MCS) and probability density function (PDF) clustering of atmospheric state</li>
           <li>PySpark Gateway</li>
           <li>Three challenges: Adapting Spark RDD to geospatial 2D/3D</li>
           <li>Parallel computing styles: parallelize over time/over space/variable, model, metrics, parameters</li>
-          <li>sciRDD transformation and actions</li>
+          <li>sRDD transformation and actions</li>
           <li>sciSpark extensions for netCDF</li>
           <li>SciSpark front-end: scala, python, spark sql; Notebooks automatic connects to spark-shell</li>
-          <li>Apache Zeppelin, SciSpark, sciRDD</li>
+          <li>Apache Zeppelin, SciSpark, sRDD</li>
           <li>Virtual machines with SciSpark were given to attendees.</li>
         </ol>
         <p>Warm up -101-1: intro. To Spark: some basic examples, such as work count<br>
@@ -145,13 +144,13 @@
         <p>SciSpark 201 is a 1.5 hour session in which we will use the search for Mesoscale Convective Complexes (MCCs) in Satellite Infrared data to show a real world example of how SciSpark enables real time response to both search queries and modifications to the underlying code. This task is representative of the motivation behind SciSpark - &nbsp;iterative data-reuse algorithms that share information between multiple stages.</p>
         <ul>
           <li>Whitehall, Kim, et al. "Exploring a graph theory based algorithm for automated identification and characterization of large mesoscale convective systems in satellite datasets." Earth Science Informatics 8.3 (2015): 663-675.</li>
-          <li><a href="https://github.com/kwhitehall/grab-tag-graph">Implementation of Grab Em', Tag Em', Graph Em' (GTG) algorithm</a> in Python.</li>
+          <li><a href="https://github.com/kwhitehall/grab-tag-graph">Implementation of Grab 'Em, Tag 'Em, Graph 'Em (GTG) algorithm</a> in Python.</li>
         </ul>
         <strong>Notes:</strong>
         A two-pronged approach to Spark<br>
         1.&nbsp;The goal of scientific RDD(sRDD)?&nbsp;The scientific Resilient Distributed Dataset (sRDD), exploits Apache Spark's concept of RDDs for multi-dimensional data representing a scientific measurement that can be subset by time, or by space. The sRDD supports multidimensional data and processing of scientific algorithms in the MapReduce paradigm within a distributed environment.</p>
         <p>2. sciTensor<br>
-        The sciTensor datatype is a self-documented array that keeps a list of arrays for a variable arrays and maintains associated metadata in a hashmap. The sciTensor is read into the sRDD and the data within is operated on via arithmetic and relational operations. sciTnesor can load data from: HDFS, OpeNDap, and local FS.</p>
+        The sciTensor datatype is a self-documented array that keeps a list of arrays for a variable arrays and maintains associated metadata in a hashmap. The sciTensor is read into the sRDD and the data within is operated on via arithmetic and relational operations. sciTensor can load data from: HDFS, OpeNDap, and local FS.</p>
         <p>3. Demo<br>
         Data visualization:<br>
         Scala RDD -&gt; Python RDD -&gt; python visualization<br>
